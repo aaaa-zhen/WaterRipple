@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Ripple Effect</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #222;
+            color: #eee;
+            font-family: sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        canvas {
+            border: 1px solid #555;
+            /* Optional: Limit canvas size for performance on large images */
+            /* max-width: 90vw;
+            max-height: 80vh; */
+            cursor: crosshair;
+        }
+        #controls {
+            margin-top: 20px;
+        }
+        #controls label {
+            margin-right: 10px;
+        }
+        #imageUpload {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Ripple Effect</h1>
+    <p>Move your mouse over the image. (May be slow on large images)</p>
+    <input type="file" id="imageUpload" accept="image/*">
+    <canvas id="rippleCanvas"></canvas>
+
+    <script src="ripple.js"></script>
+</body>
+</html>
